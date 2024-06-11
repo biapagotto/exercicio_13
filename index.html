@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card-img-overlay {
+            background-color: rgb(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+        .card-img {
+            object-fit: cover;
+            height: 100%;
+        }
+        .card {
+            height: 100%;
+        }
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <span class="navbar-brand"> 
+                    <h1>Viagens Por aí</h1>
+                </span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link">Destinos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Promoções</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link btn btn-cta">Reserve agora</a></li>
+                </ul>
+            </div>
+    </header>
+</div>
+    <div class="container mt-5">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/05/18/22/18/greece-5188603_1280.jpg" alt="Grécia">
+                    <div class="carousel-caption">
+                        <h2>Grécia</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/05/18/22/17/travel-5188598_1280.jpg" alt="Barcelona">
+                    <div class="carousel-caption">
+                        <h2>Barcelona</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2020/05/17/12/56/rome-5181486_1280.jpg" alt="Roma">
+                    <div class="carousel-caption">
+                        <h2>Roma</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h1>Bootstrap - Cards</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                <div class="card text-bg-dark h-100">
+                    <img src="https://cdn.pixabay.com/photo/2017/11/02/04/36/brazil-2910129_1280.jpg" class="card-img" alt="Rio de Janeiro">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Rio de Janeiro</h4>
+                        <h6 class="card-subtitle">A PARTIR DE</h6>
+                        <h2>R$ 250</h2>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-primary">VER MAIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                <div class="card text-bg-dark h-100">
+                    <img src="https://cdn.pixabay.com/photo/2017/02/16/21/51/maceio-2072573_1280.jpg" class="card-img" alt="Maceió">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Maceió</h4>
+                        <h6 class="card-subtitle">A PARTIR DE</h6>
+                        <h2>R$ 450</h2>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-primary">VER MAIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                <div class="card text-bg-dark h-100">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/22/18/52/beach-1761410_1280.jpg" class="card-img" alt="Recife">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Recife</h4>
+                        <h6 class="card-subtitle">A PARTIR DE</h6>
+                        <h2>R$ 400</h2>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-primary">VER MAIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</html>
